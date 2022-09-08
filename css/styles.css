@@ -150,6 +150,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
+  align-items: center;
 }
 
 .contacts-icon {
@@ -225,11 +226,12 @@ body {
 }
 
 .feature {
-  /* max-width: 270px; */
-  padding: 25px 100px;
+  height: 120px;
   background-color: var(--accent-bg-color);
-  display: block;
+  display: flex;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-icon {
@@ -282,8 +284,12 @@ body {
 }
 
 .team-item {
-  --item: 4;
   flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+  background-color: var(--light-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .team-titel {
@@ -291,14 +297,6 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-}
-
-.employers-card {
-  background-color: var(--light-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
 }
 
 .employees {
